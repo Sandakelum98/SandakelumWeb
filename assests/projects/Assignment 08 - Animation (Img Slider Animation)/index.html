@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assests/css/normalize%20-%20CSS%20Reset%20Library.css">
+    <title>Image Slider | Projects</title>
+    <link rel="icon" href="assests/icon/tab%20logo%20-%20new%203.png">
+    <style>
+        body {
+            overflow: hidden;
+        }
+        div {
+            position: relative;
+            width: 1000%;
+            margin: 0;
+            left: 0;
+            animation: 30s slider infinite;
+        }
+        div img {
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;
+        }
+        @keyframes slider {
+            0% {
+                left: 0;
+            }
+            25% {
+                left: -100%;
+            }
+            50% {
+                left: -200%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div>
+    <img src="assests/img/wallpaper-para-pc-hd-tumblr%20-%20Copy%20-%20Copy.jpg">
+    <img src="assests/img/simple_3-1024x640.png">
+    <img src="assests/img/6005397-minimalist-wallpaper%20-%20Copy%20-%20Copy.png">
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home | Golden Mart</title>
+    <link rel="stylesheet" href="assests/css/bootstrap.css">
+    <link rel="icon" href="assests/icon/tab%20logo%20-%20new%203.png">
+    <style>
+        .carousel-item > img {
+            height: 91vh;
+            object-fit: cover;
+            opacity: 30%;
+        }
+
+        .carousel-inner {
+            background: black;
+        }
+
+        #getStart > p {
+            color: white;
+            font-size: 25px;
+        }
+
+        #getStart > a > button {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: max-content;
+            height: 40px;
+        }
+
+        #getStart {
+            height: max-content;
+            width: max-content;
+            /*background: #0a53be;*/
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        /* button > a {
+             text-decoration: none;
+             color: #ffc107;
+         }*/
+    </style>
+</head>
+<body>
+
+<!--NavBar-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Golden Mart</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="order.html">Orders</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="item.html">Items</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="customer.html">Customers</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false">
+                        Support
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="#">Contact</a></li>
+                        <li><a class="dropdown-item" href="#">FAQ</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<!--Slider-->
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="assests/img/fashion-girl-shopping-wallpapers-girls-101802.jpg" class="d-block w-100"
+                 alt="picture">
+            <!--<p>Quick and easy shopping experience Happy shopping!</p>
+            <button type="button" class="btn btn-outline-warning">Get start</button>-->
+        </div>
+        <div class="carousel-item">
+            <img src="assests/img/supermarket_1920.jpg" class="d-block w-100" alt="picture">
+            <!--<p>Quick and easy shopping experience Happy shopping!</p>
+            <button type="button" class="btn btn-outline-warning">Get start</button>-->
+        </div>
+
+    </div>
+</div>
+
+<div id="getStart">
+    <p>Quick and easy shopping experience Happy shopping!</p>
+    <a href="order.html"> <button type="button" class="btn btn-outline-warning"> Order Now ! </button> </a>
+</div>
+
+
+<script src="assests/js/bootstrap.js"></script>
+</body>
+</html>

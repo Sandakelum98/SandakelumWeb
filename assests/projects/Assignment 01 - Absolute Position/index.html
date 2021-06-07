@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" >
+    <title>Absolute Position | Projects</title>
+    <link rel="stylesheet" href="assests/css/normalize%20-%20CSS%20Reset%20Library.css">
+    <link rel="icon" href="assests/icon/tab%20logo%20-%20new%203.png">
+    <style>
+
+        /*======================================section 1======================================*/
+        body > section:nth-child(1) {
+            width: 50vw;
+            height: 50vh;
+            background: red;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        body > section:nth-child(1) > div:nth-child(1) {
+            width: 150px;
+            height: 150px;
+            border-radius: 100%;
+            background-color: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        body > section:nth-child(1) > div:nth-child(1) > div {
+            width: 80px;
+            height: 80px;
+            background: red;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        body > section:nth-child(1) > div:nth-child(2) {
+            /*width: 150px;
+            height: 150px;
+            border-radius: 100%;
+            background-color: white;
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            transform: translate(-50%, -50%);*/
+
+            width: 100px;
+            height: 100px;
+            background: white;
+            position: absolute;
+            border-radius: 0 0 0 100px;
+            -moz-border-radius: 0 0 0 100px;
+            -webkit-border-radius: 0 0 0 100px;
+            transform: rotate(-90deg);
+        }
+        body > section:nth-child(1) > div:nth-child(3) {
+            width: 100px;
+            height: 100px;
+            background: white;
+            border-radius: 0 0 0 100px;
+            -moz-border-radius: 0 0 0 100px;
+            -webkit-border-radius: 0 0 0 100px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            transform: translate(0%, 0%);
+        }
+
+        /*======================================section 2======================================*/
+        body > section:nth-child(2) {
+            width: 50vw;
+            height: 50vh;
+            background: green;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        body > section:nth-child(2) > div:nth-child(1) {
+            width: 150px;
+            height: 150px;
+            border-radius: 100%;
+            background-color: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        body > section:nth-child(2) > div:nth-child(1) > div {
+            width: 80px;
+            height: 80px;
+            background: red;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        body > section:nth-child(2) > div:nth-child(2) {
+            width: 100px;
+            height: 100px;
+            background: white;
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            border-radius: 0 0 0 100px;
+            -moz-border-radius: 0 0 0 100px;
+            -webkit-border-radius: 0 0 0 100px;
+            transform: rotate(-90deg);
+
+        }
+        body > section:nth-child(2) > div:nth-child(3) {
+            width: 100px;
+            height: 100px;
+            background: white;
+            border-radius: 0 0 0 100px;
+            -moz-border-radius: 0 0 0 100px;
+            -webkit-border-radius: 0 0 0 100px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            transform: translate(0%, 0%);
+        }
+
+        /*======================================section 3======================================*/
+        body > section:nth-child(3) {
+            width: 50vw;
+            height: 50vh;
+            background: orange;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+        body > section:nth-child(3) > div:nth-child(1) {
+            width: 150px;
+            height: 150px;
+            border-radius: 100%;
+            background-color: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        body > section:nth-child(3) > div:nth-child(1) > div {
+            width: 80px;
+            height: 80px;
+            background: red;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        body > section:nth-child(3) > div:nth-child(2) {
+            width: 100px;
+            height: 100px;
+            background: white;
+            border-radius: 0 0 0 100px;
+            -moz-border-radius: 0 0 0 100px;
+            -webkit-border-radius: 0 0 0 100px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            transform: rotate(180deg);
+        }
+        body > section:nth-child(3) > div:nth-child(3) {
+            width: 100px;
+            height: 100px;
+            background: white;
+            border-radius: 0 0 0 100px;
+            -moz-border-radius: 0 0 0 100px;
+            -webkit-border-radius: 0 0 0 100px;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            transform: rotate(90deg);
+        }
+
+        /*======================================section 4======================================*/
+        body > section:nth-child(4) {
+            width: 50vw;
+            height: 50vh;
+            background: hotpink;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+        body > section:nth-child(4) > div:nth-child(1) {
+            width: 150px;
+            height: 150px;
+            border-radius: 100%;
+            background-color: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        body > section:nth-child(4) > div:nth-child(1) > div {
+            width: 80px;
+            height: 80px;
+            background: red;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        body > section:nth-child(4) > div:nth-child(2) {
+            width: 100px;
+            height: 100px;
+            background: white;
+            border-radius: 0 0 0 100px;
+            -moz-border-radius: 0 0 0 100px;
+            -webkit-border-radius: 0 0 0 100px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            transform: rotate(180deg);
+        }
+        body > section:nth-child(4) > div:nth-child(3) {
+            width: 100px;
+            height: 100px;
+            background: white;
+            border-radius: 0 0 0 100px;
+            -moz-border-radius: 0 0 0 100px;
+            -webkit-border-radius: 0 0 0 100px;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            transform: rotate(90deg);
+        }
+
+        /*======================================section 5======================================*/
+        body > section:nth-child(5) {
+            width: 50vw;
+            height: 50vh;
+        }
+        body > section:nth-child(5) > div {
+            width: 12em;
+            height: 12em;
+            background: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        body > section:nth-child(5) > div > div {
+            width: 100px;
+            height: 100px;
+            border-radius: 90%;
+            background-color: red;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+
+<!--======================================section 1======================================-->
+<section>
+    <div>
+        <div></div>
+    </div>
+
+    <div></div>
+
+    <div></div>
+</section>
+
+<!--======================================section 2======================================-->
+<section>
+    <div>
+        <div></div>
+    </div>
+
+    <div></div>
+
+    <div></div>
+</section>
+
+<!--======================================section 3======================================-->
+<section>
+    <div>
+        <div></div>
+    </div>
+
+    <div></div>
+
+    <div></div>
+</section>
+
+<!--======================================section 4======================================-->
+<section>
+    <div>
+        <div></div>
+    </div>
+
+    <div></div>
+
+    <div></div>
+</section>
+
+<!--======================================section 5======================================-->
+<section>
+    <div> <!--middle-->
+        <div></div>
+    </div>
+</section>
+
+</body>
+</html>

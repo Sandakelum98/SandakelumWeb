@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assests/css/normalize%20-%20CSS%20Reset%20Library.css">
+    <title>Speed Meter Animation | Projects</title>
+    <link rel="icon" href="assests/icon/tab%20logo%20-%20new%203.png">
+    <style>
+        body {
+            background: black;
+        }
+        .circle {
+            width: 400px;
+            height: 400px;
+            background: darkgray;
+            border-radius: 100%;
+            border: 15px white solid;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+            border-top: 15px solid red;
+            animation-name: rotation;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+        }
+        .radius {
+            width: 50%;
+            height: 15px;
+            background-color: red;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform-origin: left center;
+            transform: rotate(-45deg);
+        }
+        .ball {
+            width: 30px;
+            height: 30px;
+            background: red;
+            position: absolute;
+            left: 100%;
+            transform: translate(-24%,-24%);
+            border-radius: 100%;
+        }
+        @keyframes rotation {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="circle">
+    <div class="radius">
+        <div class="ball"></div>
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assests/css/normalize%20-%20CSS%20Reset%20Library.css">
+    <title>Sticky Position | Projects</title>
+    <link rel="icon" href="assests/icon/tab%20logo%20-%20new%203.png">
+    <style>
+
+        /*=========================1st Page.=========================*/
+        section:nth-child(1) {
+            background: white;
+            height: 100vh;
+            width: 100vw;
+        }
+        section:nth-child(1) > div:nth-child(1) {
+            background: cornflowerblue;
+            width: 100%;
+            height: 62.5px;
+            position: sticky;
+            top: 0;
+            left: 0;
+            z-index: 2;
+        }
+        section:nth-child(1) > div:nth-child(1) > h3 {
+            color: white;
+            position: absolute;
+            left: 10px;
+        }
+        section:nth-child(1) > div:nth-child(2) {
+            width: 100vw;
+            height: 100vh;
+            background: white;
+            position: absolute;
+            top: 10%;
+        }
+        section:nth-child(1) > div:nth-child(2) > h1 {
+            font-size: 60px;
+            color: black;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-60%,-150%);
+        }
+
+        /*=========================2nd Page=========================*/
+        section:nth-child(2) {
+            background: black;
+            height: 100vh;
+            width: 100vw;
+            position: absolute;
+            top: 100vh;
+        }
+        section:nth-child(2) > div:nth-child(1) {
+            background: dimgrey;
+            width: 100%;
+            height: 62.5px;
+            position: sticky;
+            top: 0;
+            left: 0;
+            z-index: 2;
+        }
+        section:nth-child(2) > div:nth-child(1) > h3 {
+            color: white;
+            position: absolute;
+            left: 10px;
+        }
+        section:nth-child(2) > div:nth-child(2) {
+            width: 100vw;
+            height: 100vh;
+            background: darkgray;
+            position: absolute;
+            top: 10%;
+        }
+        section:nth-child(2) > div:nth-child(2) > h1 {
+            font-size: 60px;
+            color: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-55%,-100%);
+        }
+
+        /*=========================3rd Page=========================*/
+        section:nth-child(3) {
+            background: red;
+            height: 100vh;
+            width: 100vw;
+            position: absolute;
+            top: 1250px;
+        }
+        section:nth-child(3) > div:nth-child(1) {
+            background: #9c2407;
+            width: 100%;
+            height: 62.5px;
+            position: sticky;
+            top: 0;
+            left: 0;
+            z-index: 2;
+        }
+        section:nth-child(3) > div:nth-child(1) > h3 {
+            color: white;
+            position: absolute;
+            left: 10px;
+        }
+        section:nth-child(3) > div:nth-child(2) {
+            width: 100vw;
+            height: 564.2031px;
+            background: #a94946;
+            position: absolute;
+            top: 10%;
+        }
+        section:nth-child(3) > div:nth-child(2) > h1 {
+            font-size: 60px;
+            color: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-55%,-100%);
+        }
+
+    </style>
+</head>
+<body>
+
+<section>
+    <div>
+        <h3>IJSE </h3>
+    </div>
+    <div>
+        <h1>Hello world</h1>
+    </div>
+</section>
+
+
+<section>
+    <div>
+        <h3>Institute of Java Software Engineering</h3>
+    </div>
+    <div>
+        <h1>Good Morning</h1>
+    </div>
+</section>
+
+
+<section>
+    <div>
+        <h3>IJSE - Panadura</h3>
+    </div>
+    <div>
+        <h1>How are you</h1>
+    </div>
+</section>
+
+</body>
+</html>

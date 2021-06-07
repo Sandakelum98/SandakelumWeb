@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <link rel="stylesheet" href="assests/css/normalize%20-%20CSS%20Reset%20Library.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Scope+One&display=swap" rel="stylesheet">
+    <title>Projects | Sanjaya Sandakelum</title>
+    <link rel="icon" href="assests/icon/tab%20logo%20-%20new%203.png">
+    <style>
+        body {
+            background: #222F3E;
+            overflow-x: hidden;
+        }
+
+        #imgBackground {
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;
+            opacity: 50%;
+            position: fixed;
+            top: 0;
+        }
+
+        #titleProject {
+            width: fit-content;
+            height: fit-content;
+            /*background-color: darkblue;*/
+            position: absolute;
+            top: 10px;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        #titleProject > h1 {
+            font-family: 'Hind Madurai', sans-serif;
+            font-size: 70px;
+            color: #F5F6FA;
+            margin: 0;
+        }
+
+        .subTitle {
+            font-family: 'Hind Madurai', sans-serif;
+            color: #F5F6FA;
+        }
+
+        #titAssigment {
+            position: relative;
+            left: 10px;
+            top: 70px;
+        }
+
+        #projectGrid {
+            width: 90%;
+            height: 800px;
+            position: absolute;
+            top: 150px;
+            left: 0;
+            right: 0;
+            margin: auto;
+
+            /*border: 1px solid #4CD137;*/
+            /*background-color: #222F3E;*/
+
+
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            grid-gap: 50px;
+        }
+
+        #projectGrid > div {
+            /*border: 1px solid red;*/
+            position: relative;
+            width: auto;
+            height: auto;
+            background-color: #222f3ec2;
+
+        }
+        .imgArticle:hover img {
+            transform: scale(1.1);
+        }
+
+        .imgArticle {
+            width: 100%;
+            height: 70%;
+            background: #353b48;
+            margin-bottom: 10px;
+        }
+
+        .imgArticle:hover {
+            cursor: pointer;
+        }
+
+        .imgArticle > img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: all ease-out 0.4s;
+        }
+
+        #projectGrid > div > p {
+            width: max-content;
+            height: max-content;
+            font-size: 19px;
+            color: #F5F6FA;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            margin: auto;
+        }
+
+        .btnShowProject {
+            position: absolute;
+            bottom: 5px;
+            left: 0;
+            right: 0;
+            margin: auto;
+
+            width: 75px;
+            height: 30px;
+            background: #4cd137b3;
+            border: 0;
+            border-radius: 5%;
+        }
+
+        .btnShowProject:hover {
+            cursor: pointer;
+            background: #4CD137;
+        }
+
+        .btnShowProject > p {
+            font-family: 'Scope One', serif;
+            color: #F5F6FA;
+            margin: 0;
+        }
+
+
+        /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+        #titCourseWork {
+            position: relative;
+            left: 10px;
+            top: 990px;
+        }
+
+        #gridCourseWork {
+            width: 90%;
+            height: 300px;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 1115px;
+
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(1, 1fr);
+            grid-gap: 50px;
+
+        }
+
+        #gridCourseWork img{
+            transition: all ease-out 0.4s;
+        }
+        #gridCourseWork img:hover {
+            transform: scale(1.1);
+        }
+
+        #imgMemoryPOS {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        #description > h5 {
+            font-size: 19px;
+            font-family: 'Hind Madurai', sans-serif;
+            color: #F5F6FA;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+        #description li {
+            color: #F5F6FA;
+        }
+        #description p {
+            color: #4CD137;
+        }
+
+        #sectionEnd {
+            height: 100px;
+            width: 100px;
+            /*background: #4b4276;*/
+            position: absolute;
+            top: 1415px;
+        }
+    </style>
+</head>
+<body>
+<img src="assests/img/project-background.jpg" id="imgBackground">
+
+<article id="titleProject">
+    <h1>Projects</h1>
+</article>
+
+<h2 class="subTitle" id="titAssigment">Internet Technologies</h2>
+
+<section id="projectGrid">
+
+    <div>
+        <a href="assests/projects/Assignment%2001%20-%20Absolute%20Position/index.html" target="_blank">
+            <article class="imgArticle"><img
+                    src="assests/projects/Assignment%2001%20-%20Absolute%20Position/assests/img/Project%20img.jpg">
+            </article>
+        </a>
+        <p>Absolute Position</p>
+        <a href="https://github.com/Sandakelum98/Internet_Technologies-Assignment01" target="_blank">
+            <button class="btnShowProject"><p>code ></p></button>
+        </a>
+    </div>
+
+    <div>
+        <a href="assests/projects/Assignment%2002%20-%20Fixed%20Position/index.html" target="_blank">
+            <article class="imgArticle"><img
+                    src="assests/projects/Assignment%2002%20-%20Fixed%20Position/assests/img/Project%20img.jpg">
+            </article>
+        </a>
+        <p>Fixed Position</p>
+        <a href="https://github.com/Sandakelum98/Internet_Technologies-Assignment02" target="_blank">
+            <button class="btnShowProject"><p>code ></p></button>
+        </a>
+    </div>
+
+    <div>
+        <a href="assests/projects/Assignment%2003%20-%20Sticky%20Position/index.html" target="_blank">
+            <article class="imgArticle">
+                <img src="assests/projects/Assignment%2003%20-%20Sticky%20Position/assests/img/Project%20img.jpg">
+            </article>
+        </a>
+        <p>Sticky Position</p>
+        <a href="https://github.com/Sandakelum98/-Internet_Technologies-Assignment03" target="_blank">
+            <button class="btnShowProject"><p>code ></p></button>
+        </a>
+    </div>
+
+    <div>
+        <a href="assests/projects/Assignment%2004%20-%20Side%20Navigation%20bar/index.html" target="_blank">
+            <article class="imgArticle">
+                <img src="assests/projects/Assignment%2004%20-%20Side%20Navigation%20bar/assests/img/Project%20img.jpg">
+            </article>
+        </a>
+        <p>Side Navigation Bar</p>
+        <a href="https://github.com/Sandakelum98/Internet_Technologies-Assignment04" target="_blank">
+            <button class="btnShowProject"><p>code ></p></button>
+        </a>
+    </div>
+
+    <div>
+        <a href="assests/projects/Assignment%2005%20-%20Grid/index.html" target="_blank">
+            <article class="imgArticle">
+                <img src="assests/projects/Assignment%2005%20-%20Grid/assests/img/Project%20img.jpg">
+            </article>
+        </a>
+        <p>Grid Layout</p>
+        <a href="https://github.com/Sandakelum98/Internet_Technologies-Assignment05" target="_blank">
+            <button class="btnShowProject"><p>code ></p></button>
+        </a>
+    </div>
+
+    <div>
+        <a href="assests/projects/Assignment%2006%20-%20Animation%20(Water%20Drop%20Animation)/index.html"
+           target="_blank">
+            <article class="imgArticle">
+                <img src="assests/projects/Assignment%2006%20-%20Animation%20(Water%20Drop%20Animation)/assests/img/Project%20img.jpg">
+            </article>
+        </a>
+        <p>Water Drop Animation</p>
+        <a href="https://github.com/Sandakelum98/Internet_Technologies-Assignment06" target="_blank">
+            <button class="btnShowProject"><p>code ></p></button>
+        </a>
+    </div>
+
+    <div>
+        <a href="assests/projects/Assignment%2007%20-%20Animation%20(Speed%20Meter%20Animation)/index.html"
+           target="_blank">
+            <article class="imgArticle">
+                <img src="assests/projects/Assignment%2007%20-%20Animation%20(Speed%20Meter%20Animation)/assests/img/Project%20img.jpg">
+            </article>
+        </a>
+        <p>Speed Meter Animation</p>
+        <a href="https://github.com/Sandakelum98/Internet_Technologies-Assignment07" target="_blank">
+            <button class="btnShowProject"><p>code ></p></button>
+        </a>
+    </div>
+
+    <div>
+        <a href="assests/projects/Assignment%2008%20-%20Animation%20(Img%20Slider%20Animation)/index.html"
+           target="_blank">
+            <article class="imgArticle">
+                <img src="assests/projects/Assignment%2008%20-%20Animation%20(Img%20Slider%20Animation)/assests/img/Project%20img.jpg">
+            </article>
+        </a>
+        <p>Image Slider</p>
+        <a href="https://github.com/Sandakelum98/Internet_Technologies-Assignment08" target="_blank">
+            <button class="btnShowProject"><p>code ></p></button>
+        </a>
+    </div>
+
+    <div>
+        <a href="assests/projects/Assignment%2009%20-%20Animation%20(Car%20Animation)/index.html" target="_blank">
+            <article class="imgArticle">
+                <img src="assests/projects/Assignment%2009%20-%20Animation%20(Car%20Animation)/assests/img/Project%20img.jpg">
+            </article>
+        </a>
+        <p>Car Animation</p>
+        <a href="https://github.com/Sandakelum98/Internet_Technologies-Assignment09" target="_blank">
+            <button class="btnShowProject"><p>code ></p></button>
+        </a>
+    </div>
+
+    <div>
+        <a href="assests/projects/Assignment%2010%20-%20Bootstrap%20(POS%20System%20Interface)/index.html"
+           target="_blank">
+            <article class="imgArticle">
+                <img src="assests/projects/Assignment%2010%20-%20Bootstrap%20(POS%20System%20Interface)/assests/img/Project%20img.jpg">
+            </article>
+        </a>
+        <p>POS interface - Bootstrap</p>
+        <a href="https://github.com/Sandakelum98/-Internet_Technologies-Assignment10" target="_blank">
+            <button class="btnShowProject"><p>code ></p></button>
+        </a>
+    </div>
+
+    <div>
+        <a href="assests/projects/Assignment%2011%20-%20POS%20System%20-%20Single%20Page%20Application%20(Using%20javascript)/index.html"
+           target="_blank">
+            <article class="imgArticle">
+                <img src="assests/projects/Assignment%2011%20-%20POS%20System%20-%20Single%20Page%20Application%20(Using%20javascript)/assests/img/Project%20img.jpg">
+            </article>
+        </a>
+        <p>SPA POS interface - Using JS</p>
+        <a href="https://github.com/Sandakelum98/Internet_Technologies-Assignment11" target="_blank">
+            <button class="btnShowProject"><p>code ></p></button>
+        </a>
+    </div>
+
+    <!--    <div></div>-->
+</section>
+
+<!--<h1>JAVAFX</h1>-->
+<section>
+    <h2 class="subTitle" id="titCourseWork">In-memory POS System</h2>
+
+    <article id="gridCourseWork">
+        <a href="assests/projects/Course%20Work%20-%20ITS%201119%20(In%20memory%20POS%20System)/index.html" target="_blank">
+            <div> <img src="assests/projects/Course%20Work%20-%20ITS%201119%20(In%20memory%20POS%20System)/assests/img/Project%20img.jpg" id="imgMemoryPOS"></div>
+        </a>
+        <div id="description">
+            <h5>System Requirements</h5>
+            <ol type="01">
+                <li>Add new items and customers to the POS system</li>
+                <li>Place an order, Save the order to the system</li>
+                <li>Manage items and customers (Edit, Remove and Update)</li>
+            </ol>
+
+            <h5 style="margin-top: 30px">Others</h5>
+            <ul>
+                <li>Single Page Application</li>
+                <li>Use MVC architectural design pattern</li>
+                <li>Save all the data in the memory using arrays.</li>
+                <li>Validate all the fields in every interface of the POS system</li>
+                <li>Automatically generate the order ID.</li>
+                <li>Automatically generate the total and discount</li>
+            </ul>
+
+            <a href="https://github.com/Sandakelum98/Internet_Technologies-CourseWork01" target="_blank" style="text-decoration: none"> <p>Click to see code ></p> </a>
+        </div>
+    </article>
+
+</section>
+
+<section id="sectionEnd"></section>
+
+</body>
+</html>
